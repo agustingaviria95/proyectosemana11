@@ -1,0 +1,38 @@
+.results-grid-container {
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+.results-grid-container .main-grid-cards {
+    background-color: #712FBA;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.results-grid-container .main-grid-cards:hover {
+    box-shadow: 4px 2px 30px -5px (white);
+    transform: scale(1.03);
+  }
+
+.results-grid-container .main-grid-cards img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.results-grid-container .main-grid-cards h4 {
+    color: white;
+    margin: 2px 0 5px 0;
+    text-shadow: 2px 2px black;
+}
+.results-grid-container .main-grid-cards h5 {
+    color: white;
+    margin: 5px 0 2px 0;
+    text-shadow: 2px 2px black;
+}
