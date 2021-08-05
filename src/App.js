@@ -17,14 +17,14 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/carddetail">
+          <Route path="/carddetail/:name">
             <CardDetailView />
           </Route>
           <Route path="/registerpage">
             <Registerpage />
           </Route>
-          <Route path="/loginpage">
-            <Loginpage />
+          <Route path="/home">
+            <Homepage />
           </Route>
           <Route path="/contactpage">
             <Contactpage />
@@ -36,7 +36,7 @@ export default function App() {
             <Results />
           </Route>
           <Route path="/">
-            <Homepage />
+            <Loginpage />
           </Route>
         </Switch>
         <Footer />

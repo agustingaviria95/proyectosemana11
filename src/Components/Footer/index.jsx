@@ -10,9 +10,8 @@ export default function Footer(){
             <h1>Servicios</h1>
             <br />
             <ul>
-                <li>Busqueda de cartas</li>
-                <li>Informacion detallada</li>
-                <li>Contenido de valor</li>
+                <li>Busqueda de Perros</li>
+                <li>Informacion de Razas</li>
             </ul>
         </div>
         <div>
@@ -20,12 +19,12 @@ export default function Footer(){
             <br />
             <h4>Busqueda por: </h4>
             <ul>
-                <li>Nombre</li>
-                <li>Tipo</li>
-                <li>Efecto</li>
+                <li>Grupo de Raza</li>
+                <li>Vida Promedio</li>
+                <li>Temperamento</li>
             </ul>
         </div>
-        <div className="logoyugi">
+        <div className="logodog">
             <img src={img1} alt="logo" />
         </div>
         <div className="socialmedia">

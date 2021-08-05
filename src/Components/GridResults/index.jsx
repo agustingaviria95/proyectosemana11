@@ -5,16 +5,17 @@ import GetData from '../../utils/getData';
 function GridResults() {
     let userInput = localStorage.getItem('userSearch');
     let cartas = GetData(userInput);
+    console.log(cartas);
     function GetCardId(id) {
                 localStorage.setItem('cardId', id);
             }
     return cartas.length === 0 ? <h1>Loading...</h1> : (
             <div className="results-grid-container">
-            { cartas.data.map( (carta) => (
-            <Link to ="/carddetail/" onClick={() => GetCardId(carta.id)} ><div className="main-grid-cards">
-                <h4>Nombre: {carta.name}</h4>
-                <img src={carta.card_images[0].image_url} alt="" />
-                <h5>Atributo: {carta.archetype || "Ninguno"}</h5>
+            { cartas.map( (item) => (
+            <Link to ={`/carddetail/${item.name}`} onClick={() => GetCardId(item.id)} ><div className="main-grid-cards">
+                <h4>{item.name} ({item.breed_group})</h4>
+                <h6>life: {item.life_span || 'unknown'}</h6>
+                <h6>temperament: {item.temperament}</h6>
             </div></Link>
             )
             )} 

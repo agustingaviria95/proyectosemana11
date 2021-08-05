@@ -12,7 +12,7 @@ function Register () {
                 </p>
                 <p>
                     <label>Usuario</label>
-                    <input type="text" name="Usuario"></input>
+                    <input type="text" name="usuario" required></input>
                 </p>
                 <p>
                     <label>Correo</label>
@@ -20,10 +20,10 @@ function Register () {
                 </p>
                 <p>
                     <label>Crear contraseña</label>
-                    <input type="password" name="Contraseña" required></input>
+                    <input type="password" name="contraseña" required></input>
                 </p>
                 <p className="full">
-                    <button className="boton-enviar">Enviar</button>
+                    <button type="submit" className="boton-enviar">Enviar</button>
                 </p>
             </form>
         </div>

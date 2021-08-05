@@ -11,17 +11,11 @@ export default function SobreNosotros (){
         Administrador de empresas que ahora intenta programar.
     </article>
     <article>
-        <h3>Joan Rodriguez</h3>
-        The youngest, le fluye el código.
+        Esta página fue realizada por mi, me gusta mucho la frase:<br/>
+        No reinventar la rueda. Estoy haciendo lo mejor que puedo<br/>
+        Sé que me falta un montón, pero tengo esperanzas de que podré.
     </article>
-    <article>
-        <h3>Leidy Andrea Muñoz</h3>
-        De lenguas modernas a Frontend Dev.
-    </article>
-    <article>
-        <h3>Mauricio Ocampo</h3>
-        Ingenierio de sistemas, lider nato.
-    </article>
+   
     </div>
     )
 }

@@ -6,7 +6,7 @@
 }
 
 .results-grid-container .main-grid-cards {
-    background-color: #712FBA;
+    background-color: rgb(31, 115, 226);
     margin: 10px;
     border-radius: 10px;
     display: flex;

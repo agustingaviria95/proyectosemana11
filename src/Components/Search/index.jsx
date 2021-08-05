@@ -11,7 +11,7 @@ function Search() {
                 <img src={logoSmall} alt="Logo" />
             </div>
             <div className="input-container">
-                <input placeholder="Busca cualquier carta" id="search-input" />
+                <input placeholder="Busca una raza" id="search-input" />
                 <Link to ="/results"><button type="button" onClick={localStorageActivate}><img src={lens} alt="Buscar" /></button></Link>
             </div>
         </div>

@@ -6,16 +6,19 @@ export default function CardDetail()  {
 
     const [card, setCard] = useState(null)
     let idCard = localStorage.getItem("cardId");
-    useEffect(() => {
+    const fetchCard = () => {
         localStorage.setItem('userSearch', '');
-        fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?id= ${idCard}`)
+        fetch(`https://api.thedogapi.com/v1/images/search?breed_ids=${idCard}`)
             .then((response) => response.json())
             .then((data) => {
-                console.log("b", data.data[0])
-                setCard(data.data[0]);
-            })
+                setCard(data);
+            });
+    }
+    useEffect(() => {
+       fetchCard()
+      
     }, [])
-
+    console.log(card);
 
     return(
         <>
@@ -23,17 +26,13 @@ export default function CardDetail()  {
         <>
             <section className="detalles-carta">
                 <div className="detalle-img">
-                    <img src={card &&  card?.card_images[0]?.image_url} alt="" />
+                    <img src={card.length > 0 ? card[0].url: null } alt="" />
                 </div>
                 <div className="detalle-text">
-                    <h4>Nombre: {card?.name}</h4>
-                    <h4>Tipo: {card?.type}</h4>
-                    <h4>Ataque: {card?.atk || 0}</h4>
-                    <h4>Defensa: {card?.def || 0}</h4>
-                    <h4>Nivel: {card?.level || 0}</h4>
-                    <h4>Raza: {card?.race}</h4>
-                    <h4>Atributo: {card?.attribute || "Ninguno"}</h4>
-                    <h4>Arquetipo: {card?.archetype || "Ninguno"}</h4>
+                    <h4>Nombre: {card[0].breeds[0].name}</h4>
+                    <h4>Temperament: {card[0].breeds[0].temperament}</h4>
+                    <h4>Life: {card[0].breeds[0].life_span}</h4>
+                    
                 </div>
             </section>
          </>

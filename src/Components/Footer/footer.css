@@ -5,8 +5,11 @@
         padding: 10%;
         width: 100%;
     }}
+    h1{
+        color: white;
+    }
 footer{
-    background-color: #712FBA;
+    background-color: rgb(31, 115, 226);
     height: 200px;
     color: white;
     display: flex;
@@ -17,7 +20,7 @@ footer{
 }
 a{
     color: white;
-    font-size: 120%;
+    font-size: 150%;
     font-weight: 700;
     text-decoration: none;
 }
@@ -32,6 +35,6 @@ ul li {
     display: grid;
     grid-template-rows: auto;
 }
-.logoyugi>img{
+.logodog>img{
     height: 100px;
 }
