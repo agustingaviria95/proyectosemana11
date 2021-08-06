@@ -9,7 +9,7 @@
 .sticky{
     width: 100%;
     position: fixed;
-    background-color: transparent;
+    background-color: rgb(31, 115, 226);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

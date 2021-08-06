@@ -22,7 +22,7 @@ function Search() {
   function localStorageActivate() {
     let userSearch = document.querySelector("#search-input").value;
         localStorage.setItem('userSearch', userSearch);
-        console.log(userSearch);
+        
     }
 
 export default Search;
